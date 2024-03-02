@@ -36,7 +36,6 @@
             border-radius: 10px;
             font-size: 15px;
             width: 50%;
-
         }
 
         button {
@@ -63,22 +62,22 @@
     </div>
 
     <div class="box">
-        <P>Leia as idades de duas crianças. Após, calcular e mostrar a soma das idades e a média.</P>
-        <input type="number" id="crianca1"  placeholder="Digite a idade da criança 1">
+        <p>Leia as idades de duas crianças. Após, calcular e mostrar a soma das idades e a média.</p>
+        <input type="number" id="crianca1" placeholder="Digite a idade da criança 1">
         <br><br>
-        <input type="number"id="crianca2" placeholder="Digite a idade da criança 2">
+        <input type="number" id="crianca2" placeholder="Digite a idade da criança 2">
         <br><br>
-        <button>Enviar</button><br><br>
+        <button onclick="somamedia()">Enviar</button><br><br>
     </div>
-</body>
-<script>
-    function somamedia() {
-        var idade 1 =parseInt(document.querySelector ('#criança1').value)
-        var idade 2 =parseInt(document.querySelector ('#criança2').value)
-        var soma = idade1 + idade2;
-        console.log('soma: ' + soma)
 
-    }
-</script>
+    <script>
+        function somamedia() {
+            var idade1 = parseInt(document.querySelector('#crianca1').value);
+            var idade2 = parseInt(document.querySelector('#crianca2').value);
+            var soma = idade1 + idade2;
+            console.log('Soma: ' + soma);
+        }
+    </script>
+</body>
 
 </html>
