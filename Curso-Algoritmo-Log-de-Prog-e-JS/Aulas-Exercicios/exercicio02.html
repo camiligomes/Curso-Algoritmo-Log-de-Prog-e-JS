@@ -63,20 +63,27 @@
     </div>
 
     <div class="box">
-        <P> Leia valores A e B. Trocar os valores entre as duas variáveis, a variável A passa a possuir o valor da
-            variável B e a variável B passa a possuir o valor da variável A</P>
-        <input type="text" placeholder="Digite um valor A">
+        <p>Leia valores A e B. Trocar os valores entre as duas variáveis, a variável A passa a possuir o valor da
+            variável B e a variável B passa a possuir o valor da variável A</p>
+        <input type="text" id="num-a" placeholder="Digite um valor A">
         <br><br>
-        <input type="text" placeholder="Digite um valor B">
+        <input type="text" id="num-b" placeholder="Digite um valor B">
         <br><br>
         <button onclick="go()">Enviar</button>
     </div>
 
+    <script>
+        function go() {
+            var a = document.getElementById('num-a').value;
+            var b = document.getElementById('num-b').value;
+            var c = b;
+            b = a;
+            a = c;
+
+            console.log('Variável A: ' + a);
+            console.log('Variável B: ' + b);
+        }
+    </script>
 </body>
-<script>
-    function go() {
-        alert('olá')
-    }
-</script>
 
 </html>
