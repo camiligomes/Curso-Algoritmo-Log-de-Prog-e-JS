@@ -65,37 +65,42 @@
 
     <div class="box">
         <P>Leia 2 números. Efetue as 4 operações matemáticas e mostre os resultados.</P>
-        <input type="numb" placeholder="Digite um valor A">
+        <input type="number" placeholder="Digite um valor A">
         <br><br>
-        <input type="numb" placeholder="Digite um valor B">
+        <input type="number" placeholder="Digite um valor B">
         <br><br>
 
-        <input type="radio" id="adicao" name="operation" value="adicao">
+        <input type="radio" id="value1" name="operation" value="adicao">
         <label for="adicao">Adição</label>
         <br><br>
 
-        <input type="radio" id="subtracao" name="operation" value="subtracao">
+        <input type="radio" id="value2" name="operation" value="subtracao">
         <label for="subtracao">Subtração</label>
 
         <br><br>
 
-        <input type="radio" id="multiplicao" name="operation" value="multiplicao">
+        <input type="radio" id="value3" name="operation" value="multiplicao">
         <label for="subtracao">Multiplicação</label>
 
         <br><br>
 
-        <input type="radio" id="divisao" name="operation" value="divisao">
+        <input type="radio" id="value4" name="operation" value="divisao">
         <label for="divisao">Divisão</label>
 
         <br><br>
 
 
-        <button>Enviar</button><br><br>
+        <button onclick="calculation">Enviar</button><br><br>
     </div>
 
 </body>
 <script>
-    function calcular  
+    function calculation () 
+    {
+        var a = document.querySelector('#value1').value;
+
+        var a = document.querySelector('#value2').value;
+    }
 </script>
 
 </html>
